@@ -1,0 +1,30 @@
+{
+  "name": "my-new-project",
+  "version": "0.1.0",
+  "sources": [{
+    "dir" : "src",
+    "subdirs" : true
+  },{
+    "dir" : "test",
+    "subdirs" : true,
+    "type": "dev"
+  }],
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": [
+    "@glennsl/bs-json",
+    "fastify-with-reason"
+  ],
+  "bs-dev-dependencies": [
+    "bs-mocha",
+    "bs-chai"
+  ],
+  "warnings": {
+    "error" : "+101"
+  },
+  "namespace": true,
+  "refmt": "./node_modules/.bin/refmt"
+}
